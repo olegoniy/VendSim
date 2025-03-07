@@ -1,0 +1,47 @@
+# Ignore the virtual environment
+venv/
+bin/
+include/
+lib/
+pyvenv.cfg
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore system-specific files (macOS & Linux)
+.DS_Store  # macOS Finder metadata
+.Trash/    # macOS Trash folder
+.AppleDouble
+.LSOverride
+
+# Ignore logs and temporary files
+*.log
+*.out
+*.tmp
+*.swp
+*.swo
+*.swn
+
+# Ignore VS Code & JetBrains IDE settings
+.vscode/
+.idea/
+
+# Ignore environment variables and secrets
+.env
+*.env
+config.json
+secrets.json
+
+# Ignore build and distribution directories
+dist/
+build/
+*.egg-info/
+
+# Ignore Jupyter Notebook checkpoints (if applicable)
+.ipynb_checkpoints/
+
+# Ignore generated documentation
+docs/_build/

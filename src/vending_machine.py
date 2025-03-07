@@ -20,9 +20,9 @@ class VM:
         """Function for selling the product and updating the amount of available change."""
         price = self.products[choice - 1].price
         if price > money:
-            raise ValueError("Too little money. Please insert more")
+            raise ValueError("Too little money. Please try again.")
         elif price < money and self.change < (money-price):
-            raise ValueError("We have too little change. Please try inserting less money.")
+            raise ValueError("Sorry, we don't have enough change. Please try again.")
         else:
             self.products[choice - 1].stock -= 1
             self.change -= (money - price)
@@ -30,14 +30,4 @@ class VM:
             print(f"Here you go! One {self.products[choice - 1].name}.")
             if (money - price) > 0:
                 print(f"Your change: {money - price}\n")
-
-
-            
-
-
-        
-
-
-
-
 

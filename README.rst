@@ -4,7 +4,7 @@ Note: Here and onwards the sample terminal commands are given for MacOs. Please 
 $ python3 -m venv ./
 $ source bin/activate
 Then you need install the required libraries. To do that, run:
-$ pip install requirements.rst
+$ pip install -r requirements.rst
 After that go to the src directory. You can use the programm by running:
 $ python3 main.py
 If you want to run the tests:

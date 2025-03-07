@@ -45,3 +45,4 @@ build/
 
 # Ignore generated documentation
 docs/_build/
+.DS_Store
